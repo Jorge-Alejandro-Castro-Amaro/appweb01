@@ -1,0 +1,70 @@
+/* Importación de fuente moderna y legible */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Configuración global */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8f9fa;
+  color: #2b2d42;
+  line-height: 1.6;
+}
+
+/* Limpieza del contenedor principal */
+body > .container-fluid {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navbar Minimalista */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #eaecf0;
+  padding: 1rem 0;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #1a1a1a !important;
+  letter-spacing: -0.5px;
+  font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link {
+  color: #4a5568 !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s ease-in-out;
+  text-transform: capitalize; /* Normaliza 'servicios', 'contacto', 'productos' */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+/* Estilos de Contenido (index, productos, servicios, contacto) */
+.container-fluid > h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.container-fluid > p {
+  color: #4b5563;
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin-bottom: 0.75rem;
+}
+
+/* Estilo para mensajes/destacados opcionales */
+.container-fluid > p:first-of-type {
+  color: #1f2937;
+  font-size: 1.15rem;
+}
