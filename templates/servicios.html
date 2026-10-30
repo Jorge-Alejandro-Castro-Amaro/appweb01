@@ -1,11 +1,19 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
 
-{% block content %}
-
-        <div class="container-fluid">
-            <h1>Servicios</h1>
-            <p>Bienvenido a la página de servicios de UDL-ICO!</p>
-            <p>Aquí puedes encontrar información sobre los servicios que ofrecemos.</p>
-        </div>
+<div class="container-fluid">
+  <h1>Servicios</h1>
+  <p>Bienvenido a la página de servicios de UDL-ICO!</p>
+  <p>Aquí puedes encontrar información sobre los servicios que ofrecemos.</p>
+  <div class="card" style="width: 18rem">
+    <img src="{{ url_for('static', filename='img/productos/pan.png') }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Pan de muerto</h5>
+      <p class="card-text">
+        Ofrecemos servicios de calidad en pan de muerto.
+      </p>
+      <a href="#" class="btn btn-primary">Mas informacion</a>
+    </div>
+  </div>
+</div>
 
 {% endblock %}

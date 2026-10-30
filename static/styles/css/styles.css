@@ -68,3 +68,45 @@ body > .container-fluid {
   color: #1f2937;
   font-size: 1.15rem;
 }
+
+.product-carousel {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.carousel-product-image {
+  height: 360px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .carousel-product-image {
+    height: 260px;
+  }
+}
+
+p:first-of-type {
+font-weight: 600;
+color: var(--text-primary);
+font-size: 1.15rem;
+}
+
+/* Configuración del carrusel */
+.mi-carrusel {
+max-width: 800px;
+margin: 30px auto;
+}
+
+/* Ajustar tamaño de las imágenes */
+.mi-carrusel .carousel-item img {
+height: 350px;
+width: 100%;
+object-fit: contain;
+}
+
+/* Hacer visibles los controles sobre fondos claros */
+.mi-carrusel .carousel-control-prev-icon,
+.mi-carrusel .carousel-control-next-icon {
+filter: invert(1);
+}
